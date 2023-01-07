@@ -12,16 +12,17 @@
     body {
         background-color: #3c4643;
         margin-top: 50px;
-        margin-left: 80px;
-        margin-right: 80px;
+        margin-left: 120px;
+        margin-right: 120px;
     
         }
-    p {
+    p, a {
         color: #00ffa8;
-        font-size: 5vw;
+        font-size: 8vw;
         font-family: Anonymous Pro;
         margin: 0rem;
         /* text-transform: uppercase; */
+        text-decoration: none;
     }
     .line {
 
@@ -37,6 +38,20 @@
         opacity: 0.2;
     } 
 
+    .fancy > .letter{
+        display: inline-block;
+        transition: transform 250ms ease;
+    }
+
+    .fancy {
+  transform: translate(0%, 0%) rotate(0deg);
+}
+
+.fancy:hover {
+  transition-duration: 400ms;
+}
+
+
 
 </style>
 
@@ -44,96 +59,43 @@
 <body>
 <div id="text">
     <div class="line">
-        <p class="word fancy">
-          <span class="letter">h</span>
-          <span class="letter">a</span>
-          <span class="letter">c</span>
-          <span class="letter">k</span>
-          <span class="letter">i</span>
-          <span class="letter">n</span>
-          <span class="letter">g</span>
-        </p>
-        <p class="word fancy">
-          <span class="letter">+</span>
-        </p>
-        <p class="word fancy">
-          <span class="letter">c</span>
-          <span class="letter">o</span>
-          <span class="letter">d</span>
-          <span class="letter">i</span>
-          <span class="letter">n</span>
-          <span class="letter">g</span>
-        </p>
-      </div>
-      <div class="line">
-        <p class="word fancy">
-          <span class="letter">d</span>
-          <span class="letter">e</span>
-          <span class="letter">s</span>
-          <span class="letter">i</span>
-          <span class="letter">g</span>
-          <span class="letter">n</span>
-        </p>
-        <p class="word fancy">
-          <span class="letter">+</span>
-        </p>
-        <p class="word fancy">
-          <span class="letter">c</span>
-          <span class="letter">o</span>
-          <span class="letter">n</span>
-          <span class="letter">t</span>
-          <span class="letter">e</span>
-          <span class="letter">n</span>
-          <span class="letter">t</span>
-        </p>
-      </div>
-      <div class="line">
-        <p class="word fancy">
-          <span class="letter">b</span>
-          <span class="letter">e</span>
-          <span class="letter">g</span>
-          <span class="letter">i</span>
-          <span class="letter">n</span>
-          <span class="letter">n</span>
-          <span class="letter">e</span>
-          <span class="letter">r</span>
-        </p>
-        <p class="word fancy">
-          <span class="letter">+</span>
-        </p>
-        <p class="word fancy">
-          <span class="letter">1</span>
-          <span class="letter">3</span>
-          <span class="letter">3</span>
-          <span class="letter">7</span>
-        </p>
-      </div>
-      <div class="line">
-        <p class="word fancy">
-          <span class="letter">a</span>
-          <span class="letter">t</span>
-        </p>
-        <p class="word fancy">
-          <span class="letter">g</span>
-          <span class="letter">i</span>
-          <span class="letter">t</span>
-        </p>
-        <p class="word fancy">
-          <span class="letter">g</span>
-          <span class="letter">u</span>
-          <span class="letter">d</span>
-        </p>
-        <p class="word fancy">
-          <span class="letter">s</span>
-          <span class="letter">e</span>
-          <span class="letter">c</span>
-        </p>
-      </div>
+        <p id="channel-link" class="word fancy">hacking</p>
+        <p id="channel-link" class="word fancy">+</p>
+        <p id="channel-link" class="word fancy">coding</p>
+    </div>
+    <div class="line">
+        
+        <p id="channel-link" class="word fancy">design</p>
+        <p id="channel-link" class="word fancy">+</p>
+        <p id="channel-link" class="word fancy">content</p>
+    </div>
+    <div class="line">
+        <p id="channel-link" class="word fancy">beginner</p>
+        <p id="channel-link" class="word fancy">+</p>
+        <p id="channel-link" class="word fancy">1337</p>
+    </div>
+    <div class="line">
+        <a id="channel-link" class="word fancy"
+        href="https://twitter.com/gitgudsec69"
+        target="_blank"
+        >at</a>
+        <a id="channel-link" class="word fancy"
+        href="https://twitter.com/gitgudsec69"
+        target="_blank"
+        >git</a>
+        <a id="channel-link" class="word fancy"
+        href="https://twitter.com/gitgudsec69"
+        target="_blank"
+        >gud</a>
+        <a id="channel-link" class="word fancy"
+        href="https://twitter.com/gitgudsec69"
+        target="_blank"
+        >sec</a>
         
 
         
     </div>
 </div>
-<!-- <script src="hover_flex.js"></script> -->
+<script src="hover_flex.js"></script> 
 </body>
 </html>
