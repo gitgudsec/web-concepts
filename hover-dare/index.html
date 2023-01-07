@@ -11,6 +11,9 @@
 
     body {
         background-color: #3c4643;
+        margin-top: 50px;
+        margin-left: 80px;
+        margin-right: 80px;
     
         }
     p {
@@ -23,33 +26,44 @@
     .line {
 
         display:flex;
-    }
+        justify-content: space-between;
+    } 
+
+     #text:has(.fancy:hover) .word:not(.fancy:hover){
+        opacity: 0.2;
+    } 
+
+    #text:has(.first:hover) .word:not(.first:hover){
+        opacity: 0.2;
+    } 
+
+
 </style>
 
 </head>
 <body>
 <div id="text">
     <div class="line">
-        <p class="word">hacking</p>
-        <p class="word">+</p>
-        <p class="word">coding</p>
+        <p class="word fancy">hacking</p>
+        <p class="word fancy">+</p>
+        <p class="word fancy">coding</p>
     </div>
     <div class="line">
-        <p class="word">+</p>
-        <p class="word">design</p>
-        <p class="word">content</p>
+        <p class="word fancy">+</p>
+        <p class="word fancy">design</p>
+        <p class="word fancy">content</p>
     </div>
     <div class="line">
-        <p class="word">for</p>
-        <p class="word">beginners</p>
+        <p class="word fancy">for</p>
+        <p class="word fancy">beginners</p>
     </div>
     <div class="line">
-        <p class="word">@</p>
-        <p class="word">git</p>
-        <p class="word">gud</p>
-        <p class="word">sec</p>
+        <p class="word fancy">@</p>
+        <p class="word fancy">git</p>
+        <p class="word fancy">gud</p>
+        <p class="word fancy">sec</p>
     </div>
 </div>
-
+<!-- <script src="hover_flex.js"></script> -->
 </body>
 </html>
