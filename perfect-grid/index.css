@@ -1,0 +1,88 @@
+:root {
+    
+     --background-color: #3c4643;
+     --border-color: rgb(255, 255, 255, 0.05);
+}
+
+body {
+    background-color: var(--background-color);
+    display: flex;
+
+    flex-direction: column;
+    height: 100vh;
+    margin: 0px;
+    overflow: hidden;
+
+}
+
+h1, h2, h3, a, p, span {
+        font-family: Anonymous Pro, sans-serif;
+        font-weight: 500;
+        color: #00ffa8;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid var(--border-color);
+}
+
+nav > .nav-section {
+    padding: 1rem 2rem;
+    display: flex;
+    
+    border-left: 1px solid var(--border-color);
+    align-items: center;
+    justify-content: center;
+
+}
+
+#nav-logo-section
+         {
+    flex-basis: calc(100% / 6);
+    justify-content: left;
+}
+
+#nav-logo-section > a > i
+         {
+    font-size: 1.2rem;
+}
+
+
+#nav-link-section {
+    flex-basis: calc(100% / 3);
+    gap: 2rem;
+}
+
+#nav-social-section,
+#nav-contact-section {
+    flex-grow: 1;
+    gap: 1rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    flex-grow: 1;
+}
+
+main > article {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 3fr 1fr;
+}
+
+/* consider whether you want to play around fine-tune colums so that nav bar and main line on R aligns */
+
+main > article > .article-section {
+    height: 100%;
+    border: 1px solid var(--border-color);
+}
+
