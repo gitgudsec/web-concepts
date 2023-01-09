@@ -21,6 +21,8 @@ elements.forEach(enhance);
 
 const fancy = document.querySelectorAll('p.fancy, a.fancy');
 
+
+
 fancy.forEach(element => {
   element.querySelectorAll('.letter').forEach(letter => {
     letter.addEventListener('mouseenter', applyRandomTransforms);
