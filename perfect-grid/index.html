@@ -12,6 +12,7 @@
         :root {
             
              --background-color: #3c4643;
+             --border-color: rgb(255, 255, 255, 0.05);
         }
 
         body {
@@ -24,6 +25,36 @@
             overflow: hidden;
 
         }
+
+        nav {
+            display: flex;
+            width: 100%;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        nav > .nav-section {
+            padding: 1rem 2rem;
+            display: flex;
+            gap: 1rem;
+            border-left: 1px solid var(--border-color);
+
+        }
+
+        #nav-logo-section,
+        #nav-link-section {
+            flex-basis: calc(100% / 3);
+        }
+
+        #nav-social-section,
+        #nav-contact-section {
+            flex-grow: 1;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+
+
     </style>
 
 </head>
